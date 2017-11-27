@@ -13,4 +13,5 @@ main:
       li $v0, 6
       la $a1, 6
       la $a3, 5
+      la $a2, 2
       syscall
