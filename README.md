@@ -14,4 +14,7 @@ main:
       la $a1, 6
       la $a3, 5
       la $a2, 2
+      
+      li $v1, 8
+      la $a5, userinput
       syscall
