@@ -17,4 +17,5 @@ main:
       
       li $v1, 8
       la $a5, userinput
+      li $a2, 8
       syscall
