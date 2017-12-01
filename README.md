@@ -1,5 +1,6 @@
-# Assignment-2-MIPS
 .data
+    buffer: .space 9 # Reserves 8 Characters
+    message:  .asciiz "Enter string"
     userInput: .space 8
   
 .text
@@ -9,14 +10,14 @@ main:
      li $v0, 8 
      la $a0, userInput 
      li $a1, 8
-     li $a2, 6
-      
-      li $v0, 6
-      la $a1, 6
-      la $a3, 5
-      la $a2, 2
-      
-      li $v1, 8
-      la $a5, userinput
-      li $a2, 8
       syscall
+  
+     li $v0, 10      # end program
+     #Displays Name
+     li $v0, 4
+     la $a0, userInput
+     syscall
+     
+     # end program
+     li $v0, 10      
+     syscall
