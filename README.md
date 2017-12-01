@@ -9,6 +9,7 @@ main:
      li $v0, 8 
      la $a0, userInput 
      li $a1, 8
+     li $a2, 6
       
       li $v0, 6
       la $a1, 6
